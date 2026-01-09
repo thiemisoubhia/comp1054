@@ -29,3 +29,6 @@ This course explores the intersection of design principles, web standards, and a
 **Term:** Winter 2025  
 **Academic Level:** Post Secondary  
 **Prerequisite:** COMP 1002 (HTML, CSS, and JS Fundamentals)
+
+
+**Using the page https://validator.w3.org/ for validation**
