@@ -29,9 +29,9 @@ section p {
     color: cyan;
 }
 
-.about p a {
-    /* background-color: orange; */
-}
+/* .about p a {
+     background-color: orange; 
+} */
 
 /* STEP 5: Grouped Selector
 ------------------------------------------------------- */
@@ -97,6 +97,6 @@ h1 + p{
 
 /* STEP 11: Getting Crazy
 ------------------------------------------------------- */
-.project h2[lang="es"] + p em{
+/* .project h2[lang="es"] + p em{
     
-}
+} */
