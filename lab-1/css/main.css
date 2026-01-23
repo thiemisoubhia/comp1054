@@ -1,0 +1,67 @@
+/*Naomi Soubhia Doi 200645137
+Thiemi Soubhia Doi 200645138 */
+
+#page {
+    padding-left: 8vh;
+    padding-right: 8vh;
+}
+
+
+header h1 {
+    border: 2px solid black;
+    width: 130px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    padding-left: 8px;
+    font-size: 20px;
+}
+
+header h2 {
+    font-family: "Antonio", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transform: scaleY(2);
+    letter-spacing: 0.3em;
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    word-spacing: 17px;
+    transform: scaleY(1.2);
+}
+
+main {
+    column-count: 3;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    column-gap: 40px;
+    text-align: justify;
+}
+
+main h4 {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    word-spacing: 1.6px;
+}
+
+main p {
+    text-indent: 1.5em;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.4;
+    text-align: justify;
+    hyphens: auto;
+}
