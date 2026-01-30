@@ -6,5 +6,36 @@
 #95D3DE - blue
 #E1EDED - off-white */
 
+/* header */
+header {
+    background-color: #000;
+    padding: 20px 0;
+}
 
+nav ul {
+    /* remove dots */
+    list-style: none;
+    /* same line */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    color: #E1EDED;
+    padding: 0;
+}
 
+nav ul li a {
+    /* remove underline */
+    text-decoration: none;
+    color: #E1EDED;
+    font-weight: bold;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+/* footer */
+footer{
+    background-color: #CB7678;
+}
