@@ -159,6 +159,10 @@ main > div:nth-of-type(3) {
     background-color: #000;
 }
 
+iframe{
+    border-radius: 5px;
+}
+
 main > div:nth-of-type(3) p {
     flex: 1;
     min-width: 300px;
