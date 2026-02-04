@@ -13,11 +13,12 @@
 
 /* header */
 header {
-    background-color: #000;
-    padding: 15px;
+    /* opacity style */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* blur the background-color */
+    backdrop-filter: blur(10px);
+    padding: 20px;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -58,13 +59,34 @@ main {
 main>div:nth-of-type(2) {
     background-color: #CB7678;
     color: #E1EDED;
+    overflow: hidden; /* hide the text when overflow the page*/
+    white-space: nowrap; /*dont break the line*/
+    padding: 25px 0;
+    display: flex;
 }
 
-main>div:nth-of-type(2) p {
+main > div:nth-of-type(2) p {
+    display: inline-block;
+    padding-left: 100%; /*start the text 50% behind the screen*/
+    font-size: 20px;
     margin: 0;
-    font-size: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    color: #E1EDED;
+    word-spacing: 5px;
+    font-weight: 900;
+    font-family: 'Libre Franklin', sans-serif;
+    
+    /*  animation with css*/
+    animation: sign 40s linear infinite;
+}
+
+/*animation*/
+@keyframes sign{
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /*first div inside main*/
@@ -94,6 +116,7 @@ main>div:first-of-type img {
     height: 100%;
     /* img follow the parent height */
     width: auto;
+    margin-top: 0.5rem;
     display: block;
 }
 
@@ -103,8 +126,20 @@ main>div:first-of-type h3 {
     text-align: center;
     margin: 5px 0;
     text-transform: uppercase;
+}
+
+main > div:first-of-type h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #E1EDED;
+}
+
+main > div:first-of-type h3 {
     color: #CB7678;
-    font-family: "Galindo", sans-serif;
+    letter-spacing: 10px;
+    font-size: 1rem;
 }
 
 main>div:nth-of-type(5) div p {
@@ -112,15 +147,44 @@ main>div:nth-of-type(5) div p {
     margin-bottom: 0px;
 }
 
-
+/* about */
 /* video style */
-/* fixed when scroll the page */
-iframe {
-    position: sticky;
-    top: 20px;
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
+main > div:nth-of-type(3) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 10% ;
+    background-color: #000;
+}
+
+main > div:nth-of-type(3) p {
+    flex: 1;
+    min-width: 300px;
+    line-height: 1.8;
+    color: #E1EDED;
+    font-size: 1.1rem;
+}
+
+
+/* harry style */
+
+main > div:nth-of-type(5) div:nth-of-type(1){
+    width: min-content;
+    margin: 3vh;
+}
+
+main > div:nth-of-type(5) div:nth-of-type(1) h1:nth-of-type(1){
+    margin-bottom: -10px;
+    text-align: center;
+    font-size: 40px;
+    z-index: 10;
+    position: absolute;
+}
+
+img{
+    z-index: 2;
 }
 
 
@@ -129,9 +193,10 @@ footer {
     background-color: #CB7678;
     text-align: center;
     margin: 0px;
-    height: 10vh;
 }
 
 footer p {
     margin: 0px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
