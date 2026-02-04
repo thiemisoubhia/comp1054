@@ -84,6 +84,7 @@ main > div:nth-of-type(2) p {
 }
 
 /*animation*/
+/* https://www.w3schools.com/cssref/atrule_keyframes.php */
 @keyframes sign{
     0% {
         transform: translateX(0%);
@@ -124,13 +125,14 @@ main>div:first-of-type img {
     display: block;
 }
 
-/* changing style for home texts */
+/* changing style for home texts H1 and H3*/
 main>div:first-of-type h1,
 main>div:first-of-type h3 {
     text-align: center;
     margin: 5px 0;
     text-transform: uppercase;
 }
+
 
 main > div:first-of-type h1 {
     font-size: 3rem;
@@ -163,10 +165,13 @@ main > div:nth-of-type(3) {
     background-color: #000;
 }
 
+
+/* video round border */
 iframe{
     border-radius: 5px;
 }
 
+/* about paragraph */
 main > div:nth-of-type(3) p {
     flex: 1;
     min-width: 300px;
