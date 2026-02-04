@@ -23,7 +23,7 @@ header {
     z-index: 1000;
 }
 
-nav ul {
+nav ul{
     /* remove dots */
     list-style: none;
     /* same line */
@@ -56,7 +56,7 @@ main {
 
 /* setence style */
 /* refers to the second div in the main */
-main>div:nth-of-type(2) {
+main> article:first-of-type {
     background-color: #CB7678;
     color: #E1EDED;
     overflow: hidden; /* hide the text when overflow the page*/
@@ -69,7 +69,7 @@ strong{
     color: #C6EBEF;
 }
 
-main > div:nth-of-type(2) p {
+main > article:first-of-type p {
     display: inline-block;
     padding-left: 100%; /*start the text 50% behind the screen*/
     font-size: 18px;
@@ -94,8 +94,8 @@ main > div:nth-of-type(2) p {
     }
 }
 
-/*first div inside main*/
-main>div:first-of-type {
+/*first section inside main*/
+main>section:first-of-type {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,7 +109,7 @@ main>div:first-of-type {
 }
 
 /* the div inside the first div in the main */
-main>div:first-of-type>div:first-child {
+main>section:first-of-type>div:first-child {
     height: 80vh;
     /*70 to the image and 30 to title*/
     display: flex;
@@ -117,7 +117,7 @@ main>div:first-of-type>div:first-child {
 }
 
 /* the img inside main and first div */
-main>div:first-of-type img {
+main>section:first-of-type img {
     height: 100%;
     /* img follow the parent height */
     width: auto;
@@ -126,15 +126,15 @@ main>div:first-of-type img {
 }
 
 /* changing style for home texts H1 and H3*/
-main>div:first-of-type h1,
-main>div:first-of-type h3 {
+main>section:first-of-type h1,
+main>section:first-of-type h2 {
     text-align: center;
     margin: 5px 0;
     text-transform: uppercase;
 }
 
 
-main > div:first-of-type h1 {
+main > section:first-of-type h1 {
     font-size: 3rem;
     letter-spacing: 5px;
     font-weight: 900;
@@ -142,20 +142,20 @@ main > div:first-of-type h1 {
     color: #E1EDED;
 }
 
-main > div:first-of-type h3 {
+main > section:first-of-type h2 {
     color: #46C7E0;
     letter-spacing: 10px;
     font-size: 1rem;
 }
 
-main>div:nth-of-type(5) div p {
+main>section:nth-of-type(4) div p {
     /* remove the margin between the main and footer content */
     margin-bottom: 0px;
 }
 
 /* about */
 /* video style */
-main > div:nth-of-type(3) {
+main > article:nth-of-type(2) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -169,10 +169,11 @@ main > div:nth-of-type(3) {
 /* video round border */
 iframe{
     border-radius: 5px;
+    border: 2px solid #46C7E0;
 }
 
 /* about paragraph */
-main > div:nth-of-type(3) p {
+main > article:nth-of-type(2) p {
     flex: 1;
     min-width: 300px;
     line-height: 1.8;
@@ -182,7 +183,8 @@ main > div:nth-of-type(3) p {
 
 
 /* lyrics */
-main > div:nth-of-type(4) {
+/* second section in the main */
+main > section:nth-of-type(2) {
     background-image: url('../image/harry-background.jpeg');
     background-size: cover;
     background-attachment: fixed;
@@ -192,7 +194,7 @@ main > div:nth-of-type(4) {
 }
 
 /* lyrics card */
-main > div:nth-of-type(4) > div {
+main > section:nth-of-type(2) > div {
     background-color: rgba(203, 118, 120, 0.8);
     /* blur effect */
     backdrop-filter: blur(5px);
@@ -203,7 +205,7 @@ main > div:nth-of-type(4) > div {
 }
 
 
-main > div:nth-of-type(4) h5 {
+main > section:nth-of-type(2) h3 {
     color: #E1EDED;
     font-family: 'Libre Franklin', sans-serif;
     margin-top: 30px;
@@ -214,8 +216,7 @@ main > div:nth-of-type(4) h5 {
     margin-bottom: 10px;
 }
 
-
-main > div:nth-of-type(4) p {
+main > section:nth-of-type(2) p {
     /* keep the html break lines */
     white-space: pre-line;
     line-height: 1.6;
@@ -229,22 +230,23 @@ main > div:nth-of-type(4) p {
 /* https://youtu.be/xA407w7gRSI?si=SgogrofLd-elAm62 */
 
 /* container circle */
-main > div:nth-of-type(5) > div:first-of-type {
+main > section:nth-of-type(3) > div {
     display: flex;
-    justify-content: center;
+    /* side by side in a row */
+    flex-direction: row;
     align-items: center;
-    height: 350px;
-    padding: 4vh 10vh;
-    position: relative;
+    justify-content: center;
+    gap: 50px;
+    padding: 4vh 10%;
 }
 
 /* svg style */
-main > div:nth-of-type(5) svg {
+main > section:nth-of-type(3) svg {
     /* animation to spin */
     animation: spin 15s linear infinite; 
 }
 
-main > div:nth-of-type(5) svg text {
+main > section:nth-of-type(3) svg text {
     fill: #E1EDED; 
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 900;
@@ -259,9 +261,8 @@ main > div:nth-of-type(5) svg text {
     to { transform: rotate(360deg); }
 }
 
-main > div:nth-of-type(5) div:nth-of-type(1) p{
-    padding-left: 10vh;
-    padding-right: 20vh;
+main > section:nth-of-type(3) article p {
+    padding: 0; 
     line-height: 1.6;
     font-size: 1.1rem;
 }
