@@ -4,7 +4,7 @@
 /* color palette:
 #CB7678 - salmon
 #A71A5A - pink
-#95D3DE - blue
+#46C7E0 - blue
 #E1EDED - off-white */
 
 * {
@@ -137,7 +137,7 @@ main > div:first-of-type h1 {
 }
 
 main > div:first-of-type h3 {
-    color: #CB7678;
+    color: #46C7E0;
     letter-spacing: 10px;
     font-size: 1rem;
 }
@@ -168,11 +168,52 @@ main > div:nth-of-type(3) p {
 }
 
 
+/* lyrics */
+main > div:nth-of-type(4) {
+    background-image: url('../image/harry-background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0; 
+    display: flex;
+    justify-content: center;
+}
+
+/* lyrics card */
+main > div:nth-of-type(4) > div {
+    background-color: rgba(203, 118, 120, 0.8);
+    /* blur effect */
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(225, 237, 237, 0.2);
+}
+
+
+main > div:nth-of-type(4) h5 {
+    color: #E1EDED;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+
+main > div:nth-of-type(4) p {
+    /* keep the html break lines */
+    white-space: pre-line;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #E1EDED;
+    margin-bottom: 20px;
+}
+
 /* harry style */
 
-main > div:nth-of-type(5) div:nth-of-type(1){
-    width: min-content;
-    margin: 3vh;
+main > div:nth-of-type(5) {
 }
 
 main > div:nth-of-type(5) div:nth-of-type(1) h1:nth-of-type(1){
@@ -199,4 +240,6 @@ footer p {
     margin: 0px;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #E1EDED;
 }
