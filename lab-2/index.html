@@ -1,126 +1,179 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>Specifying Color with RGBa, HSLa, Hexadecimal, and CSS Filters</title>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/base.css" rel="stylesheet">
 	<style>
-/* STEP 1: Using the color picker utility at
+		/* STEP 1: Using the color picker utility at
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool,
 set each color in hexadecimal format
 to match as closely as you can with the colors
 on the FIRST paint swatch card provided.
 -------------------------------------------------- */
-	#hex div:nth-of-type(1) {
-		background-color: red;
-	}
-	#hex div:nth-of-type(2) {
-		background-color: orange;
-	}
-	#hex div:nth-of-type(3) {
-		background-color: yellow;
-	}
-	#hex div:nth-of-type(4) {
-		background-color: limegreen;
-	}
-/* STEP 2: Set each color in rgba format
+		#hex div:nth-of-type(1) {
+			background-color: #ec899b;
+		}
+
+		#hex div:nth-of-type(2) {
+			background-color: #ffd6d2;
+		}
+
+		#hex div:nth-of-type(3) {
+			background-color: #f8cdd9;
+		}
+
+		#hex div:nth-of-type(4) {
+			background-color: #e60557;
+		}
+
+		/* STEP 2: Set each color in rgba format
 to match as closely as you can with the colors
 on the SECOND paint swatch card provided.
 -------------------------------------------------- */
-	#rgba div:nth-of-type(1) {
-		background-color: red;
-	}
-	/* ...and so on... */
+		#rgba div:nth-of-type(1) {
+			background-color: rgb(38, 27, 55);
+		}
 
-/* STEP 3: Set each color in hsla format
+		#rgba div:nth-of-type(2) {
+			background-color: rgb(64, 57, 86);
+		}
+
+		#rgba div:nth-of-type(3) {
+			background-color: rgb(118, 101, 125);
+			;
+		}
+
+		#rgba div:nth-of-type(4) {
+			background-color: rgb(174, 160, 180);
+		}
+
+		/* ...and so on... */
+
+		/* STEP 3: Set each color in hsla format
 to match as closely as you can with the colors
 on the THIRD paint swatch card provided.
 -------------------------------------------------- */
-	#hsla div:nth-of-type(1) {
-		background-color: red;
-	}
-	/* ...and so on... */
+		#hsla div:nth-of-type(1) {
+			background-color: hsl(20 85% 32%);
+		}
 
-	/* STEP 4: Set each color using a CSS color keywords
+		#hsla div:nth-of-type(2) {
+			background-color: hsl(9 61% 51%);
+		}
+
+		#hsla div:nth-of-type(3) {
+			background-color: hsl(9, 57%, 56%);
+		}
+
+		#hsla div:nth-of-type(4) {
+			background-color: hsl(2, 90%, 75%);
+		}
+
+		/* ...and so on... */
+
+		/* STEP 4: Set each color using a CSS color keywords
 (https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
 that matches each color as closely as possible, then
 apply one or more CSS filters to see if you can
 produce an exact rendition of the swatch colors on the FOURTH card provided.
 (https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
 -------------------------------------------------- */
-	#keyword div:nth-of-type(1) {
-		background-color: red;
-	}
-	/* ...and so on... */
+		#keyword div:nth-of-type(1) {
+			background-color: darkred;
+			filter: grayscale(80%);
+			filter: brightness(50%);
+			filter: contrast(10%);
+		}
 
-	/* STEP 5: Describe one or more things that you can do to ensure that the colour rendering on your screen is exactly the same (or as close as possible) to the colours on your paint chip cards. If possible, attempt to do one or more of these things and describe what you did and what you found out. Maybe a screenshot, too if it might help. */
-</style>
+		#keyword div:nth-of-type(2) {
+			color: grey;
+			background-color: beige;
+			filter: grayscale(92%);
+		}
+
+		#keyword div:nth-of-type(3) {
+			background-color: darkred;
+			filter: grayscale(80%);
+		}
+
+		#keyword div:nth-of-type(4) {
+			background-color: darkred;
+			filter: grayscale(40);
+		}
+
+		/* ...and so on... */
+
+		/* STEP 5: Describe one or more things that you can do to ensure that the colour rendering on your screen is exactly the same (or as close as possible) to the colours on your paint chip cards. If possible, attempt to do one or more of these things and describe what you did and what you found out. Maybe a screenshot, too if it might help. */
+	</style>
 </head>
 
 <body>
 	<header>
-		<h1>Specifying Color <em>with</em> <abbr title="Red, Green, Blue, Alpha">RGBa</abbr>, <abbr title="Hue, Saturation, Luminousity, Alpha">HSLa</abbr>, Hexadecimal, <em>and</em> CSS Filters</h1>
+		<h1>Specifying Color <em>with</em> <abbr title="Red, Green, Blue, Alpha">RGBa</abbr>, <abbr
+				title="Hue, Saturation, Luminousity, Alpha">HSLa</abbr>, Hexadecimal, <em>and</em> CSS Filters</h1>
 	</header>
 	<main>
 		<section id="hex">
 			<h2>Hexadecimal</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Candy Fluff</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Rosewater</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Candy Necklace</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Tropical Rose</h3>
 			</div>
 		</section>
 		<section id="rgba">
 			<h2>RGB(A)</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>King's Treasure</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Victorian Violet</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Evening Drama</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Pure Orchid</h3>
 			</div>
 		</section>
 		<section id="hsla">
 			<h2>HSL(A)</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Burnt Pumpkin</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Party Place</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>African Tulip</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Peachy Pink</h3>
 			</div>
 		</section>
 		<section id="keyword">
 			<h2>Keyword / CSS Filter</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Cliff Face</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Yukon Ice</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Urban Village</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Iron Ore</h3>
 			</div>
 		</section>
 	</main>
@@ -128,4 +181,5 @@ produce an exact rendition of the swatch colors on the FOURTH card provided.
 		<p><small>Colors based on CIL color paint swatch cards</small></p>
 	</footer>
 </body>
+
 </html>

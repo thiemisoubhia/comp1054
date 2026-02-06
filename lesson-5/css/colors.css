@@ -2,7 +2,7 @@
 html {
 	box-sizing: border-box;
 }
-	*, *:before, *:after {
+	*, *::before, *::after {
 	box-sizing: inherit;
 }
 html {
@@ -22,7 +22,7 @@ header {
 	/* STEP 1b: Select a HUE using the Hue Slider */
 	/* STEP 1c: De-Saturate the colour a bit, reduce the Lightness, and make the colour slightly transparent by adjusting the Alpha. */
 	/* STEP 1d: Copy the resulting RGBa value and replace the background-color below */
-	background-color: black;
+	background-color: rgb(74 93 191 / 0.780);
 	padding: 1% 10%;
 }
 header h1 {
@@ -30,17 +30,16 @@ header h1 {
 	letter-spacing: 0.1em;
 	color: white;
 	/* STEP 3: Soften the <h1> element text using the opacity property */
-
+	opacity: 0.5;
 }
 main {
 	padding: 0 10%;
 }
 main h2 {
 	/* STEP 2: Set the <h2> inside the <main> to the same transparent purple, but use the HSLa colour syntax, instead */
-
 	font-size: 500%;
 	margin: 0;	
-	color: white;
+	color: lab();
 }
 main p {
 	margin-top: 0;

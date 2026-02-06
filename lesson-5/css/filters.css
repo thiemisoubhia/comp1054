@@ -4,12 +4,15 @@ body {
 }
 main section:nth-child(1) img:hover {
     /* STEP 1: blur() */
+    filter: blur(25px);
 }
 main section:nth-child(2) img:hover {
     /* STEP 2: brightness() */
+    filter: brightness(200%);
 }
 main section:nth-child(3) img:hover {
     /* STEP 3: contrast() */
+    filter: contrast(300%);
 }
 main section:nth-child(4) img:hover {
     /* STEP 4: drop-shadow() */
