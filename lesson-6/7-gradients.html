@@ -2,110 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Gradient Backgrounds</title>
+	<title>Border Image | COMP1054 Web User Interface Design</title>
+	<link rel="stylesheet" href="css/border-image.css" />
+	<script src="js/jquery.js"></script>
 	<style>
+		/* CSS border-image-repeat example
+		Thanks to Chris Coyier (https://css-tricks.com/almanac/properties/b/border-image/) */
+
+		/* STEP 1: Examine the image we will use - 'img/doily.png' */
+		.bordered-box {
+			
+			/* STEP 2: Set the border-image-source */
+			
+			/* STEP 3: Set the border-image slice, width, and outset */
+			
+			/* STEP 4: Set the border-image-repeat (stretch | repeat | round | space) */
+			
+		}
+
 		body {
-			padding: 1.25em;
-			font-size: 100%;
-			background-color: #ccc;
+			font-family: sans-serif;
+			background-color: #1D1F1F;
 		}
 
 		div {
-			float: left;
-			height: 150px;
-			margin: 10px;
-			width: 150px;
-			background-color: silver;
+			margin: 1em auto;
 		}
 
-		p {
-			color: #fff;
-			font: bold 1.25em/1 sans-serif;
-			padding-top: 1.65em;
+		div h1 {
+			color: white;
 			text-align: center;
-		}
-		/* STEP 1: LINEAR GRADIENTS
-		------------------------------------------ */
-		/* Vertical */
-		.vertical-down {
-
-			/* default gradient, so you don't need to specify "to bottom" before the colors */
-
-		}
-		.vertical-up {
-
-		}
-		/* Horizontal */
-		.horizontal-rt {
-
-		}
-		.horizontal-lt {
-
-		}
-		/* Diagonal Angles */
-		.angle-corners {
-
-		}
-		/* Angles via Degrees */
-		.angle-deg {
-
-		}
-
-		/* STEP 2: RADIAL GRADIENTS
-		------------------------------------------ */
-		.radial p {
-
-		}
-		.radial-center {
-
-		}
-		.radial-top {
-
-		}
-		.radial-size-1 {
-
-		}
-		.radial-size-2 {
-
-		}
-
-		/* STEP 3: LINEAR GRADIENTS WITH COLOR STOPS
-		------------------------------------------ */
-		.color-stops div {
-		}
-
-		.color-stops p {
-		}
-
-		.color-stops {
-
-		}
-		/* STEP 4: Use a color gradient CSS generator - http://www.colorzilla.com/gradient-editor/ */
-		.gradient-generator {
-
 		}
 	</style>
 </head>
 <body>
-<div class="vertical-down"><p>default</p></div>
-<div class="vertical-up"><p>to top</p></div>
-
-<div class="horizontal-rt"><p>to right</p></div>
-<div class="horizontal-lt"><p>to left</p></div>
-
-<div class="angle-corners"><p>corner to corner</p></div>
-
-<div class="angle-deg"><p>degrees</p></div>
-
-<section class="radial">
-	<div class="radial-center"><p>default</p></div>
-	<div class="radial-top"><p>at top</p></div>
-
-	<div class="radial-size-1"><p>radial size 1</p></div>
-	<div class="radial-size-2"><p>radial size 2</p></div>
-</section>
-
-<div class="color-stops"><p>color stops</p></div>
-<div class="gradient-generator"><p>gradient generator</p></div>
+	<div class="bordered-box">
+		<h1>CSS Border Image</h1>
+	</div>
 </body>
 </html>
