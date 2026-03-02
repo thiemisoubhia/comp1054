@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&family=Roboto+Slab:wght@100..900&display=swap');
+
+body{
+    background-color: #fcfafa;
+}
+
+/* header */
+header {
+    display: flex;
+    /* h1 and p together to change the order and show the date first*/
+    /* https://www.w3schools.com/cssref/css3_pr_flex-direction.php */
+    flex-direction: column-reverse;
+    padding: 0 2rem;
+    align-items: flex-start;
+}
+
+/* page date */
+header p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-left: 2rem;
+    font-size: 2.6vh;
+}
+
+/* page title */
+header h1 {
+    color: #f46c21;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    text-transform: lowercase;
+    font-size: 30vh;
+    margin: 0;
+    letter-spacing: -2vh;
+    word-spacing: 3rem;
+    line-height: 1;
+}
