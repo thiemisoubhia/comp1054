@@ -8,7 +8,8 @@ body {
 }
 
 h2{
-    font-family: ;
+    font-family: "Playfair Display", serif;
+    text-transform: lowercase;
 }
 
 /* header */
@@ -62,6 +63,24 @@ aside {
 /*all the sections in the second column*/
 section {
     grid-column: 2;
+    max-width: 80%;
+    margin: 0;         /* Garante que não há margem externa */
+    padding-top: 5px;  /* Espaço entre a linha colorida e o título */
+    padding-bottom: 5px
+}
+
+
+/* sections and borders */
+section:nth-of-type(1){
+    border-top: 1rem solid #70A038;
+}
+
+section:nth-of-type(2){
+    border-top: 1rem solid #DD297C;
+}
+
+section:nth-of-type(3){
+    border-top: 1rem solid #06A0B8;
 }
 
 aside:first-of-type {
