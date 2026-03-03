@@ -87,7 +87,7 @@ aside:first-of-type {
     /* first aside- image in the top*/
     grid-column: 1;
     /* the aside will cover all three sections related to the right column */
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 4;
 }
 
 aside:last-of-type {
@@ -95,6 +95,7 @@ aside:last-of-type {
     grid-row: 3;
     border: 2px solid #f46c21;
     margin: 2rem;
+    margin-top: 10rem;
     padding: 1rem;
 }
 
