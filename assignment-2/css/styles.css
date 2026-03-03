@@ -5,11 +5,16 @@
 
 body {
     background-color: #F0EEEF;
+    font-family: "Roboto Slab", serif;
 }
 
 h2 {
     font-family: "Playfair Display", serif;
     text-transform: lowercase;
+    margin: 0;
+    font-weight: 400;
+    font-size: 3.5rem;
+
 }
 
 /* header */
@@ -24,7 +29,6 @@ header {
 
 /* page date */
 header p {
-    font-family: "Roboto Slab", serif;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -35,7 +39,6 @@ header p {
 /* page title */
 header h1 {
     color: #f46c21;
-    font-family: "Roboto Slab", serif;
     font-weight: 300;
     text-transform: lowercase;
     font-size: 30vh;
@@ -97,8 +100,7 @@ aside:last-of-type {
     grid-column: 1;
     grid-row: 3;
     border: 2px solid #f46c21;
-    margin: 2rem;
-    margin-top: 10rem;
+    margin-right: 2.5rem;
     padding: 1rem;
     position: relative;
     margin-left: 6rem;
@@ -123,7 +125,6 @@ aside:first-of-type figcaption {
     line-height: 1.2;
     /* in the top */
     z-index: 2;
-    font-family: "Roboto Slab", serif;
 }
 
 aside:first-of-type figcaption em {
@@ -134,7 +135,7 @@ aside:first-of-type figcaption em {
     line-height: 0.8;
 }
 
-aside:first-of-type figcaption p:first-of-type{
+aside:first-of-type figcaption p:first-of-type {
     margin: 0;
     padding: 0 8px;
     display: block;
@@ -159,6 +160,12 @@ aside:first-of-type figcaption p:last-child {
     white-space: nowrap;
     word-spacing: 4px;
 }
+
+/* aside content */
+li h3 {
+    text-transform: uppercase;
+}
+
 
 /* footer */
 footer {
