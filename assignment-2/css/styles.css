@@ -7,7 +7,7 @@ body {
     background-color: #F0EEEF;
 }
 
-h2{
+h2 {
     font-family: "Playfair Display", serif;
     text-transform: lowercase;
 }
@@ -53,6 +53,7 @@ main {
     grid-template-columns: auto 1fr;
     align-items: start;
     margin: 0 auto;
+    position: relative;
 }
 
 /*all the asides in the same column*/
@@ -64,22 +65,24 @@ aside {
 section {
     grid-column: 2;
     max-width: 80%;
-    margin: 0;         /* Garante que não há margem externa */
-    padding-top: 5px;  /* Espaço entre a linha colorida e o título */
+    margin: 0;
+    /* Garante que não há margem externa */
+    padding-top: 5px;
+    /* Espaço entre a linha colorida e o título */
     padding-bottom: 5px
 }
 
 
 /* sections and borders */
-section:nth-of-type(1){
+section:nth-of-type(1) {
     border-top: 1rem solid #70A038;
 }
 
-section:nth-of-type(2){
+section:nth-of-type(2) {
     border-top: 1rem solid #DD297C;
 }
 
-section:nth-of-type(3){
+section:nth-of-type(3) {
     border-top: 1rem solid #06A0B8;
 }
 
@@ -97,6 +100,8 @@ aside:last-of-type {
     margin: 2rem;
     margin-top: 10rem;
     padding: 1rem;
+    position: relative;
+    margin-left: 6rem;
 }
 
 img {
@@ -104,8 +109,59 @@ img {
     height: auto;
 }
 
+/* image texts */
+aside:first-of-type figure {
+    position: relative;
+    line-height: 0;
+}
+
+aside:first-of-type figcaption {
+    position: absolute;
+    bottom: 5%;
+    left: 22%;
+    color: white;
+    line-height: 1.2;
+    /* in the top */
+    z-index: 2;
+    font-family: "Roboto Slab", serif;
+}
+
+aside:first-of-type figcaption em {
+    display: block;
+    font-style: normal;
+    font-size: 16vh;
+    font-weight: 300;
+    line-height: 0.8;
+}
+
+aside:first-of-type figcaption p:first-of-type{
+    margin: 0;
+    padding: 0 8px;
+    display: block;
+    font-size: 2.5vh;
+    max-width: 31vh;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* second p figure caption */
+aside:first-of-type figcaption p:last-child {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    z-index: 800;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #000000;
+    position: absolute;
+    top: 65vh;
+    left: -9rem;
+    white-space: nowrap;
+    word-spacing: 4px;
+}
+
 /* footer */
-footer{
+footer {
     text-align: end;
     padding: 2rem;
 }
