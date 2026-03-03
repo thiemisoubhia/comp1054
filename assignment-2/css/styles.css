@@ -3,8 +3,12 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&family=Roboto+Slab:wght@100..900&display=swap');
 
-body{
+body {
     background-color: #F0EEEF;
+}
+
+h2{
+    font-family: ;
 }
 
 /* header */
@@ -38,4 +42,50 @@ header h1 {
     letter-spacing: -2vh;
     word-spacing: 3rem;
     line-height: 1;
+}
+
+/* main content */
+main {
+    /*define as grid to create 2 columns*/
+    display: grid;
+    /*1 column image width and 2 the remaining space */
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    margin: 0 auto;
+}
+
+/*all the asides in the same column*/
+aside {
+    grid-column: 1;
+}
+
+/*all the sections in the second column*/
+section {
+    grid-column: 2;
+}
+
+aside:first-of-type {
+    /* first aside- image in the top*/
+    grid-column: 1;
+    /* the aside will cover all three sections related to the right column */
+    grid-row: 1 / span 2;
+}
+
+aside:last-of-type {
+    grid-column: 1;
+    grid-row: 3;
+    border: 2px solid #f46c21;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+img {
+    max-width: 80vh;
+    height: auto;
+}
+
+/* footer */
+footer{
+    text-align: end;
+    padding: 2rem;
 }
