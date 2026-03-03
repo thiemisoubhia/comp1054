@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 /* google font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&family=Roboto+Slab:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     background-color: #F0EEEF;
     font-family: "Roboto Slab", serif;
@@ -164,6 +163,8 @@ aside:first-of-type figcaption p:last-child {
 /* aside content */
 li h3 {
     text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
 }
 
 
