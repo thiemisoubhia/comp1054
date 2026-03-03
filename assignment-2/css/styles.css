@@ -183,6 +183,7 @@ section ol li {
     /* space to show the value */
     margin-left: 1.5rem;
     padding-left: 0.5rem;
+    margin-top: 0.8rem;
 }
 
 section ol li::marker {
