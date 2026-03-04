@@ -99,7 +99,7 @@ aside:last-of-type {
     grid-row: 3;
     border: 2px solid #f46c21;
     margin: 2rem;
-    margin-top: 22rem;
+    margin-top: 17rem;
     margin-left: 6rem;
     padding: 1.5rem;
     display: block;
@@ -183,7 +183,8 @@ section ol li {
     /* space to show the value */
     margin-left: 1.5rem;
     padding-left: 0.5rem;
-    margin-top: 0.8rem;
+    margin-top: 1rem;
+    width: 80%;
 }
 
 section ol li::marker {
@@ -198,6 +199,7 @@ section ol li p {
     margin: 0.2rem;
     /* 0 top, 0 right, 0 bottom and 5px left */
     font-weight: 400;
+    font-size: 1.1rem;
 }
 
 section ol li h3 {
