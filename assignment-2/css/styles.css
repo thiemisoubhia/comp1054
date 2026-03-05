@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
+    padding-left: 12vh;
     background-color: #F0EEEF;
     font-family: "Roboto Slab", serif;
 }
@@ -59,6 +60,25 @@ main {
     position: relative;
 }
 
+aside:first-of-type {
+    /* first aside- image in the top*/
+    grid-column: 1;
+    /* the aside will cover all three sections related to the right column */
+    grid-row: 1 / span 4;
+}
+
+aside:last-of-type {
+    /* first column on the page but in the third row */
+    grid-row: 3;
+    border: 2px solid #f46c21;
+    margin: 2rem;
+    margin-top: 17rem;
+    margin-left: 6rem;
+    padding: 1.5rem;
+    display: block;
+}
+
+
 /*all the asides in the same column*/
 aside {
     grid-column: 1;
@@ -85,24 +105,6 @@ section:nth-of-type(2) {
 
 section:nth-of-type(3) {
     border-top: 1rem solid #06A0B8;
-}
-
-aside:first-of-type {
-    /* first aside- image in the top*/
-    grid-column: 1;
-    /* the aside will cover all three sections related to the right column */
-    grid-row: 1 / span 4;
-}
-
-aside:last-of-type {
-    grid-column: 1;
-    grid-row: 3;
-    border: 2px solid #f46c21;
-    margin: 2rem;
-    margin-top: 17rem;
-    margin-left: 6rem;
-    padding: 1.5rem;
-    display: block;
 }
 
 
@@ -228,4 +230,108 @@ section:nth-of-type(3) ol li h3 {
 footer {
     text-align: end;
     padding: 2rem;
+}
+
+
+/* responsive */
+/* smaller than 1200px */
+@media (max-width: 1200px) {
+    body {
+        padding: 2rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        /* only one column */
+    }
+
+    aside:first-of-type,
+    aside:last-of-type,
+    section {
+        grid-column: 1;
+        grid-row: auto;
+        margin: 1rem 1rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section {
+        max-width: 100%;
+        padding: 1rem 0;
+    }
+
+    header h1 {
+        font-size: 15vh;
+        letter-spacing: -1vh;
+        word-spacing: 1rem;
+    }
+
+    header p {
+        font-size: 2vh;
+        margin-left: 0;
+    }
+
+
+    aside:first-of-type figcaption p:last-child {
+        display: block;
+        position: relative;
+        /* remove rotation */
+        transform: none;
+        writing-mode: horizontal-tb;
+        font-size: 1rem;
+        /*text center*/
+        text-align: center;
+        margin: auto;
+        left: auto;
+        top: auto;
+        font-weight: 600;
+        font-size: 3rem;
+        background-color: #ffffffcb;
+    }
+
+    aside:first-of-type figcaption em {
+        font-size: 8rem;
+    }
+
+    footer{
+        font-size: 2rem;
+    }
+
+}
+
+/*smaller than 600px*/
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    section ol li h3,
+    section ol li p {
+        display: block;
+    }
+
+    aside:first-of-type figcaption p:last-of-type {
+        font-size: 0.8rem;
+
+    }
+
+    header h1 {
+        font-size: 5rem;
+        letter-spacing: -0.5vh;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    figure{
+        margin: 0;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
 }
