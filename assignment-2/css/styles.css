@@ -5,7 +5,9 @@
 
 body {
     padding-left: 12vh;
+    /* page background */
     background-color: #F0EEEF;
+    /* main page font */
     font-family: "Roboto Slab", serif;
 }
 
@@ -24,6 +26,7 @@ header {
     /* h1 and p together to change the order and show the date first*/
     /* https://www.w3schools.com/cssref/css3_pr_flex-direction.php */
     flex-direction: column-reverse;
+    /* horizontal padding */
     padding: 0 2rem;
     align-items: flex-start;
 }
@@ -133,6 +136,7 @@ aside:last-of-type ol {
 }
 
 
+/* model image */
 img {
     max-width: 80vh;
     height: auto;
