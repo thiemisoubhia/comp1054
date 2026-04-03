@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- style css -->
+    <link href="css/style.css" rel="stylesheet" />
+
     <!-- Using Tristan Brown dependency -->
-    <link href="css/tables.css" rel="stylesheet" />
     <script src="js/tablesort/tablesort.min.js"></script>
     <link href="js/tablesort/css/tablesort.css" rel="stylesheet">
     <script src="js/tables.js" defer></script>
@@ -23,17 +25,29 @@
     <main>
         <!-- table element -->
         <table>
-            <caption>Atlantic</caption>
-            <thead></thead>
+            <caption>Eastern Atlantic</caption>
+            <!-- table header -->
+            <thead>
+                <th scope="col">Rank</th>
+                <th scope="col">Team</th>
+                <th scope="col">GP</th>
+                <th scope="col">W</th>
+                <th scope="col">L</th>
+                <th scope="col">OT</th>
+                <th scope="col">PTS</th>
+                <th scope="col">P%</th>
+                <th scope="col">GF</th>
+                <th scope="col">GA</th>
+            </thead>
             <tbody></tbody>
             <tfoot></tfoot>
         </table>
     </main>
 
     <!-- footer -->
-     <footer>
+    <footer>
         <h4>Reference: <em>https://www.nhl.com/standings/2026-04-02/division</em></h4>
-     </footer>
+    </footer>
 </body>
 
 </html>
