@@ -5,7 +5,6 @@
 
 html {
     font-family: "Roboto", sans-serif;
-    background: #f4f6f9;
 }
 
 /* centralize table */
@@ -28,7 +27,8 @@ caption {
 }
 
 /* cells */
-td, th {
+td,
+th {
     border: 1px solid #d0d7de;
     padding: 1rem 0.8rem;
     text-align: center;
@@ -36,7 +36,7 @@ td, th {
 
 /* striping rows */
 tbody tr:nth-child(even) {
-    background-color: rgba(135, 135, 135, 0.25);
+    background-color: #eaeaea;
 }
 
 /* team column align left */
@@ -45,12 +45,8 @@ tbody td:nth-child(2) {
     font-weight: 600;
 }
 
-tbody th {
-    font-weight: bold;
-}
-
-/* rank color blue */
-thead th:first-child,
-tbody th:first-child {
-    background-color: #CCEEFF;
+/* header color */
+thead th {
+    background: #a1c8ff;
+    cursor: pointer;
 }
