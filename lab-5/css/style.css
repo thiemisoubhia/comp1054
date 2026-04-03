@@ -47,6 +47,13 @@ tbody td:nth-child(2) {
 
 /* header color */
 thead th {
-    background: #a1c8ff;
+    background: #b5b5b5;
     cursor: pointer;
 }
+
+td img {
+    width: 3rem;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
