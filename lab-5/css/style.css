@@ -34,13 +34,23 @@ td, th {
     text-align: center;
 }
 
-/* stripped */
+/* striping rows */
 tbody tr:nth-child(even) {
-    background-color: rgb(0, 0, 0, 0.25);
+    background-color: rgba(135, 135, 135, 0.25);
 }
 
 /* team column align left */
 tbody td:nth-child(2) {
     text-align: left;
     font-weight: 600;
+}
+
+tbody th {
+    font-weight: bold;
+}
+
+/* rank color blue */
+thead th:first-child,
+tbody th:first-child {
+    background-color: #CCEEFF;
 }
