@@ -10,13 +10,26 @@ html {
 
 /* centralize table */
 main {
-    max-width: 1200px;
-    margin: auto;
+    padding: 0 1rem;
 }
 
 table {
     border-collapse: collapse;
-    table-layout: fixed;
+    table-layout: auto;
     width: 100%;
+    padding: auto;
 }
 
+caption {
+    caption-side: top;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* cells */
+td, th {
+    border: 1px solid #d0d7de;
+    padding: 1rem 0.8rem;
+    text-align: center;
+}
