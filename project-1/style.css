@@ -12,8 +12,11 @@
 body {
     /*background and gradient*/
     background-color: #0a0a0c;
-    /* pink and purple */
-    background: linear-gradient(90deg, #ff007f, #ff85c1, #9d00ff);
+    /* dark gradient */
+    background-image:
+        /* 135deg */
+        linear-gradient(315deg, rgba(255, 0, 127, 0.1) 0%, transparent 40%),
+        linear-gradient(135deg, rgba(112, 0, 255, 0.1) 0%, transparent 40%);
     /* font */
     color: #fff0f6;
     font-family: "Roboto", sans-serif;
@@ -30,18 +33,28 @@ h1 {
 header {
     padding: 8rem 4rem;
     background: linear-gradient(180deg, rgba(255, 0, 127, 0.05) 0%, transparent 100%);
+    text-align: center;
 }
 
 /* title */
 header h1 {
-    font-size: 3.5rem;
-    letter-spacing: 0.4em;
-    line-height: 0.9;
+    font-size: 5.5rem;
+    letter-spacing: 0.08em;
+    line-height: 1;
     text-transform: uppercase;
     /*gradient text*/
-    background: linear-gradient(90deg, #ff007f, #ff85c1, #9d00ff);
+    background: linear-gradient(90deg, #ff007f, #ff85c1);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    
     margin-bottom: 1rem;
+}
+
+header h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: #ffd2e9;
 }
