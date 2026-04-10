@@ -29,10 +29,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 800;
-  color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    color: #fff;
 }
 
 
@@ -115,13 +115,62 @@ article {
 
 }
 
+main li {
+    margin-left: 1rem;
+}
+
 /* quote */
 blockquote {
-  padding: 2rem 1.4rem;
-  border-left: 5px solid #ff007f;
-  margin: 2rem 0;
+    padding: 2rem 1.4rem;
+    border-left: 5px solid #ff007f;
+    margin: 2rem 0;
 }
 
 blockquote p {
-  line-height: 1.3;
+    line-height: 1.3;
+}
+
+
+/* buttons */
+.link-github,
+.link-guidelines,
+[class^="link-download"],
+.link-codepen {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1.2rem 0rem;
+    background: #ff007f;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #ff007f;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+
+.link-github,
+.link-guidelines{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* star svg */
+svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+}
+
+
+/* hover */
+.link-github:hover,
+.link-guidelines:hover,
+[class^="link-download"]:hover,
+.link-codepen:hover {
+    border: 2px solid #ff007f;
+    background: transparent;
+    color: #fff !important;
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.4);
 }
