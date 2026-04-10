@@ -64,6 +64,7 @@ header h1 {
     margin-bottom: 1rem;
 }
 
+
 header h2 {
     font-size: 1rem;
     font-weight: 400;
@@ -193,6 +194,7 @@ aside h2, aside h4{
     text-transform: uppercase;
 }
 
+
 /* footer */
 .page-footer {
     margin-top: 10rem;
@@ -208,4 +210,26 @@ aside h2, aside h4{
 
 .page-footer li {
     list-style: none;
+}
+
+/* animation */
+/* https://blog.hubspot.com/website/css-fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main,
+aside {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+header {
+  animation: fadeIn 4s ease forwards;
 }
