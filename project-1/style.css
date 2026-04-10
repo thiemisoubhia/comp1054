@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/*Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*reset css*/
 * {
     margin: 0;
@@ -9,4 +12,7 @@
 body {
     /*background and gradient*/
     background-color: #0a0a0c;
+    color: #fff0f6;
+    font-family: "Roboto", sans-serif;
+
 }
