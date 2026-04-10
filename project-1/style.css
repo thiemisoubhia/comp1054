@@ -35,6 +35,10 @@ h2 {
     color: #fff;
 }
 
+a {
+    color: #fff;
+}
+
 
 
 /* header */
@@ -150,7 +154,7 @@ blockquote p {
 
 
 .link-github,
-.link-guidelines{
+.link-guidelines {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -173,4 +177,33 @@ svg {
     background: transparent;
     color: #fff !important;
     box-shadow: 0 0 20px rgba(255, 0, 127, 0.4);
+}
+
+/*aside*/
+aside {
+    max-width: 350px;
+    margin: 4rem auto;
+    padding: 2rem;
+    border: 2px solid #ff007f;
+}
+
+aside h2{
+    
+}
+
+/* footer */
+.page-footer {
+    margin-top: 10rem;
+    padding: 5rem 6rem;
+    background: #000;
+    border-top: 1px solid #ff007f;
+}
+
+.page-footer p {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.page-footer li {
+    list-style: none;
 }
