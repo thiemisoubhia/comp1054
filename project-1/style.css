@@ -181,14 +181,16 @@ svg {
 
 /*aside*/
 aside {
-    max-width: 350px;
-    margin: 4rem auto;
+    max-width: 320px;
+    margin: 3rem auto;
     padding: 2rem;
     border: 2px solid #ff007f;
 }
 
-aside h2{
-    
+aside h2, aside h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem !important;
+    text-transform: uppercase;
 }
 
 /* footer */
