@@ -12,7 +12,36 @@
 body {
     /*background and gradient*/
     background-color: #0a0a0c;
+    /* pink and purple */
+    background: linear-gradient(90deg, #ff007f, #ff85c1, #9d00ff);
+    /* font */
     color: #fff0f6;
     font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
+h1 {
+    font-family: "Oswald", sans-serif;
+}
+
+
+/* header */
+header {
+    padding: 8rem 4rem;
+    background: linear-gradient(180deg, rgba(255, 0, 127, 0.05) 0%, transparent 100%);
+}
+
+/* title */
+header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.4em;
+    line-height: 0.9;
+    text-transform: uppercase;
+    /*gradient text*/
+    background: linear-gradient(90deg, #ff007f, #ff85c1, #9d00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
 }
